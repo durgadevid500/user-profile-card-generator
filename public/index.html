@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Profile Card Generator</h1>
+        <p>Create and save your professional profile</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Create Your Profile</h2>
+
+            <form id="profileForm">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="bio">Bio</label>
+                <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" placeholder="Java, Python, SQL">
+
+                <label for="social">Social Link</label>
+                <input type="url" id="social" placeholder="https://linkedin.com/in/yourname">
+
+                <button type="submit">Create Profile</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="profiles-section">
+            <h2>Saved Profiles</h2>
+            <div id="profilesContainer" class="profiles-grid">
+                <p>Loading profiles...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Profile Card Generator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
